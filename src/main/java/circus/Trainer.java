@@ -1,22 +1,27 @@
+package circus;
+
+import circus.animal.Animal;
+import circus.animal.Bird;
+import circus.animal.Duck;
+
+
 public class Trainer {
     public static void main(String[] args) {
         Duck d = new Duck();
-        getToSpeak(d);
+        //getToSpeak(d);
 
         Bird b = (Bird) d;  // upcasting
-        getToSpeak(b);
+        //getToSpeak(b);
 
         Animal a = (Animal) b; // upcasting
-        getToSpeak(a);
+       //getToSpeak(a);
 
         Duck d2 = (Duck) a; // downcasting
-        getToSpeak(d2);
+        //getToSpeak(d2);
 
         train(new Duck());
         // train(new Parrot());
 
-        Animal a2 = new Animal();
-        Bird b2 = new Bird();
 
     }
 
